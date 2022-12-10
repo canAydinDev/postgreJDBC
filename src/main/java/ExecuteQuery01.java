@@ -33,8 +33,9 @@ public class ExecuteQuery01 {
 
         ResultSet rs3=st.executeQuery(sql3);
         while (rs3.next()){
-            System.out.println(rs3.getString("company")+"--"+rs3.getInt("company_id")+"--"+rs3.getInt(3));
+            System.out.println(rs3.getInt("company_id")+"--"+rs3.getString("company")+"--"+rs3.getInt(3));
         }
+
 
 
     }
